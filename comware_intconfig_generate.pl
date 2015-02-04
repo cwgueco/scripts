@@ -1,5 +1,5 @@
 #!/usr/bin/perl -w
-#
+#Updated
 use Getopt::Long;
 
 # no nonsense
@@ -23,7 +23,6 @@ GetOptions(
     )
 or &usage(); 
 
-#print "Hello world.\n";
 print "Inttype: $optinttype\n" if $DEBUG;
 print "Start  : $optstartint\n" if $DEBUG;
 print "End    : $optendint\n" if $DEBUG;
