@@ -1,4 +1,4 @@
- #!/usr/bin/perl
+#!/usr/bin/perl
 ###########################################################################
 # skeletonscraper.pl - Skeleton Scraper Plugin
 # Author: Jonathan Yantis <yantisj@gmail.com>
