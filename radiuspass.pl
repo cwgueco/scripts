@@ -1,8 +1,8 @@
 #! /usr/bin/perl
 
-# This is simple perl script to generate a salted hash from the password input
-# The username and salted hash are sent over via email 
-# These can be for the accounts in FreeRADIUS
+# This is simple perl script to generate a Unix-style crypted/salted hash from the password input
+# The username and hash are sent over via email 
+# These can be for the accounts in FreeRADIUS (https://freeradius.org/radiusd/man/rlm_pap.txt)
 
 use strict;
 use warnings;
