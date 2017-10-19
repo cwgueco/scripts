@@ -4,6 +4,9 @@
 # The username and hash are sent over via email 
 # These can be for the accounts in FreeRADIUS (https://freeradius.org/radiusd/man/rlm_pap.txt)
 
+# These modules are needed to be installed; Below are applicable for Debian Linux
+# apt-get install perltermreadline libterm-readline-gnu-perl libterm-readkey-perl libterm-readline-perl-perl libterm-readline-zoid-perl
+
 use strict;
 use warnings;
 use Term::ReadKey;
