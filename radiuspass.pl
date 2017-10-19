@@ -13,6 +13,7 @@ my $debug = 0;
 #my $logname = $ENV{ LOGNAME };
 #print "\$logname = $logname\n";
 
+# Collect username and password
 print "Username: ";
 my $logname = <>;
 print "Enter password: ";
@@ -24,6 +25,7 @@ print "\nEnter password again: ";
 my $pass2 = <>;
 ReadMode 'restore';
 
+# Compare password entered are similar
 print "\n";
 chomp($pass1);
 chomp($pass2);
@@ -32,7 +34,7 @@ if ($pass1 cmp $pass2) {
     print "\nPassword do not match!\n"; 
 } else {         
     print "\nPassword match\n"; 
-    $crypt =  crypt($pass1, "salt");
+    $crypt =  crypt($pass1, "salt"); # Note: the salt used is "salt" :)
     print "Username: $logname";
     if ($debug) { print "Password: $pass1\n"; }
     print "Crypt   : $crypt\n";
